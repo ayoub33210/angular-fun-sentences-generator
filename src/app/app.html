@@ -1,6 +1,10 @@
-<section>
-  <div class="example-label">Click to generate fun sentences : </div>
-  <div class="example-button-row">
-    <button matButton="tonal" >Ow</button>
-  </div>
-</section>
+<h1>wElCoMe tO tHe GeNerAtOr</h1>
+<div class="example-label">
+  <h3>Click to generate fun sentences :</h3>
+  <form>
+    <input type="button" [value]="btn" (click)="receiveSubject(btn)" />
+    <!-- appelle la fonction -->
+    <p>{{ message }}</p>
+  </form>
+</div>
+<app-subject-component (message_subject)="receiveSubject($event)"></app-subject-component>
