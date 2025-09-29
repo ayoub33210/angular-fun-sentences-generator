@@ -10,12 +10,8 @@ import { SubjectComponent } from './subject-component/subject-component';
 })
 export class App {
   protected readonly title = signal('fun-sentences-generator');
-  message = '';
-  btn = 'generate';
-  showMessage() {
-    this.message = 'yepa';
-  }
+  mot1 = '';
   receiveSubject(msg: string) {
-    this.message = msg;
+    this.mot1 = msg;
   }
 }

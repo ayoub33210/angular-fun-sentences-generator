@@ -2,9 +2,9 @@
 <div class="example-label">
   <h3>Click to generate fun sentences :</h3>
   <form>
-    <input type="button" [value]="btn" (click)="receiveSubject(btn)" />
+    <!-- <input type="button" [value]="btn" (click)="receiveSubject(btn)" /> -->
     <!-- appelle la fonction -->
-    <p>{{ message }}</p>
+    <p>{{ mot1 }}</p>
   </form>
 </div>
-<app-subject-component (message_subject)="receiveSubject($event)"></app-subject-component>
+<app-subject-component (subject_parent)="receiveSubject($event)"></app-subject-component>
