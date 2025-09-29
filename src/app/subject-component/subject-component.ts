@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './subject-component.css'
 })
 export class SubjectComponent {
+    subject = 'je suis toi';  
   
 }
