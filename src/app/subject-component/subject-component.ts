@@ -24,16 +24,15 @@ export class SubjectComponent {
 
   // ✅ Output : permet à l’enfant d’envoyer un message au parent
   @Output() subject_parent = new EventEmitter<string>();
-  // constructor(private monService: MonService){}
-  // ngOnInit(): void {
-  //   //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-  //   //Add 'implements OnInit' to the class.
-  //   this.subject_parent = this.monService.getRandomIndex(this.subject_word.length)
-  // }
+  constructor(private monService: MonService){}
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+  }
   sendSubject() {
-    // 🔹 génère un index aléatoire
-    const randomI = Math.floor(Math.random() * this.subject_word.length);
+    // const idx = this.monService.getRandomIndex(this.subject_word.length);
+    // const chosen = this.subject_word[idx];
     // 🔹 émet le sujet choisi vers le parent
-    this.subject_parent.emit(this.subject_word[randomI]);
+    this.subject_parent.emit(this.subject_word[this.monService.getRandomIndex(this.subject_word.length)]);
   }
 }
