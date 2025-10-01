@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-    background-color: gray;
+
+html,
+body,
+app-root {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #484b4b !important; /* ton gris voulu */
 }

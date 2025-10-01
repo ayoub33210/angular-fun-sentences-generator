@@ -1,7 +1,16 @@
-<section>
-  <div class="example-label">Click to generate fun sentences : </div>
-  <div class="example-button-row">
-    <button matButton="tonal" >Ow<app-subject-component></app-subject-component></button>
-    
-  </div>
-</section>
+<h1>wElCoMe tO tHe GeNerAtOr</h1>
+<div class="example-label">
+  <h3>Click to generate fun sentences :</h3>
+  <form>
+    <!-- <input type="button" [value]="btn" (click)="receiveSubject(btn)" /> -->
+    <!-- appelle la fonction -->
+    <p>{{ mot1 }}</p>
+    <p>{{ mot2 }}</p>
+    <p>{{ mot3 }}</p>
+  </form>
+</div>
+<app-subject-component (subject_parent)="receiveSubject($event)"></app-subject-component>
+<app-verbcomponent (verb_parent)="receiveVerb($event)"></app-verbcomponent>
+<app-object-component (object_parent)="receiveObject($event)"
+  ></app-object-component
+>
