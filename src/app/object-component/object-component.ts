@@ -11,7 +11,6 @@ export class ObjectComponent {
   @Input() object_list = [
     'dans la poubelle',
     'avec sa grand-mère',
-    'sur OnlyFans',
     'dans un cimetière',
     'avec un lama bourré',
     'au milieu du supermarché',
@@ -24,7 +23,6 @@ export class ObjectComponent {
     'dans la salle des profs',
     'avec un cadavre frais',
     'dans une boulangerie',
-    'sur Tinder',
     'dans une cave humide',
     'avec un clown triste',
     'dans un hôpital psychiatrique',

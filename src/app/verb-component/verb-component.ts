@@ -4,8 +4,8 @@ import { MonService } from '../services/mon-service';
 @Component({
   selector: 'app-verbcomponent',
   standalone: true,
-  templateUrl: './verbcomponent.html',
-  styleUrl: './verbcomponent.css',
+  templateUrl: './verb-component.html',
+  styleUrl: './verb-component.css',
 })
 export class Verbcomponent {
   @Input() verb_list = [

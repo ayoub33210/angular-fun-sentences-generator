@@ -2,7 +2,7 @@ import { Component, signal } from '@angular/core';
 import { SubjectComponent } from './subject-component/subject-component';
 // import { RouterOutlet } from '@angular/router';
 import { ObjectComponent } from './object-component/object-component';
-import { Verbcomponent } from './verbcomponent/verbcomponent';
+import { Verbcomponent } from './verb-component/verb-component';
 @Component({
   selector: 'app-root',
   imports: [SubjectComponent,ObjectComponent,Verbcomponent],

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Verbcomponent } from './verbcomponent';
+import { Verbcomponent } from './verb-component';
 
 describe('Verbcomponent', () => {
   let component: Verbcomponent;
