@@ -27,7 +27,6 @@ export class Verbcomponent {
     'tabasse',
     'crache',
     'humilie',
-    'arnaque encore',
     'mange',
   ];
 

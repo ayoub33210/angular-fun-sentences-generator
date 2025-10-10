@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
 import { SubjectComponent } from './subject-component/subject-component';
-// import { RouterOutlet } from '@angular/router';
 import { ObjectComponent } from './object-component/object-component';
 import { Verbcomponent } from './verb-component/verb-component';
+// import { PhraseComponent } from './phrase-component/phrase-component';
 @Component({
   selector: 'app-root',
   imports: [SubjectComponent,ObjectComponent,Verbcomponent],
@@ -22,5 +22,11 @@ export class App {
   }
   receiveObject(msg3: string) {
     this.mot3 = msg3;
+  }
+  createSentence(msg: string, msg2: string, msg3: string) {
+    this.mot1 = msg;
+    this.mot2 = msg2;
+    this.mot3 = msg3;
+
   }
 }
